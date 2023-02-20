@@ -43,6 +43,7 @@ namespace ChallengeApp
                 }
             }
         }
+
         private static void AddEmployeeAndGradesInMemory()
         {
             while (true)
@@ -70,6 +71,7 @@ namespace ChallengeApp
                 }
             }
         }
+
         public static void AddEmployeeAndGradesInFile()
         {
             while (true)
@@ -97,6 +99,7 @@ namespace ChallengeApp
                 }
             }
         }
+
         private static void EnterGrade(IEmployee employee)
         {
             while (true)
@@ -137,14 +140,17 @@ namespace ChallengeApp
                 }
             }
         }
+
         static void OnGradeUnder30(object sender, EventArgs args)
         {
             WritelineColor(ConsoleColor.Magenta, "Oh nie! Pracownik otrzymał ocenę poniżej 30. Powinniśmy pomyśleć o dodatkowym szkoleniu dla tej osoby.\n");
         }
+
         static void OnGradeAdded(object sender, EventArgs args)
         {
             WritelineColor(ConsoleColor.Green, "Nowa ocena została dodana.\n");
         }
+        
         private static void WritelineColor(ConsoleColor color, string text)
         {
             Console.ForegroundColor = color;

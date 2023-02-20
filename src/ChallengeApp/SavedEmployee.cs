@@ -16,6 +16,7 @@ namespace ChallengeApp
         {
             fullFileName = $"{lastName}_{firstName}{auditFileName}";
         }
+
         public override string FirstName
         {
             get
@@ -31,6 +32,7 @@ namespace ChallengeApp
                     }
             }
         }
+
         public override string LastName
         {
             get
@@ -46,6 +48,7 @@ namespace ChallengeApp
                     }
             }
         }
+        
         public override void AddGrade(double grade)
         {
             if (grade > 0 && grade <= 100)
@@ -72,41 +75,7 @@ namespace ChallengeApp
                 throw new ArgumentException($"{grade} nie jest poprawną wartością. Ocena musi zawierać się w przedziale 0,5-100.");
             }
         }
-        public override void AddGrade(string grade)
-        {
-            if ((grade[^1] == '+' || grade[^1] == '-'))
-            {
-                var modifier = grade[^1];
-                var gradeSing = double.Parse(grade[..^1]) + modifier
-                switch
-                {
-                    '+' => .5,
-                    '-' => -.25,
-                    _ => 0
-                };
-                if (gradeSing > 0 && gradeSing <= 100)
-                {
-                    AddGrade(gradeSing);
-                }
-                else
-                {
-                    throw new ArgumentException("Ocena musi zawierać się w przedziale 0,5-100!");
-                }
-            }
-            else
-            {
-                double gradeDouble = 0;
-                var isParsed = double.TryParse(grade, out gradeDouble);
-                if (isParsed && gradeDouble > 0 && gradeDouble <= 100)
-                {
-                    AddGrade(gradeDouble);
-                }
-                else
-                {
-                    throw new ArgumentException("Ocena musi zawierać się w przedziale 0,5-100!");
-                }
-            }
-        }
+
         public override Statistics GetStatistics()
         {
             var result = new Statistics();

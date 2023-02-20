@@ -15,6 +15,7 @@ namespace ChallengeApp
             High = double.MinValue;
             Low = double.MaxValue;
         }
+        
         public double Average
         {
             get
@@ -22,6 +23,7 @@ namespace ChallengeApp
                 return Sum / Count;
             }
         }
+
         public void Add(double number)
         {
             Sum += number;

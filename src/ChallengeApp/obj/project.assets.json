@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mciep\\Desktop\\Karolci Mega\\Nowy folder (4)\\CAŁKIEM NOWE\\src\\ChallengeApp\\ChallengeApp.csproj",
+      "projectUniqueName": "C:\\Users\\mciep\\Desktop\\Karolci Mega\\Nowy folder (4)\\Grades\\src\\ChallengeApp\\ChallengeApp.csproj",
       "projectName": "ChallengeApp",
-      "projectPath": "C:\\Users\\mciep\\Desktop\\Karolci Mega\\Nowy folder (4)\\CAŁKIEM NOWE\\src\\ChallengeApp\\ChallengeApp.csproj",
+      "projectPath": "C:\\Users\\mciep\\Desktop\\Karolci Mega\\Nowy folder (4)\\Grades\\src\\ChallengeApp\\ChallengeApp.csproj",
       "packagesPath": "C:\\Users\\mciep\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mciep\\Desktop\\Karolci Mega\\Nowy folder (4)\\CAŁKIEM NOWE\\src\\ChallengeApp\\obj\\",
+      "outputPath": "C:\\Users\\mciep\\Desktop\\Karolci Mega\\Nowy folder (4)\\Grades\\src\\ChallengeApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mciep\\AppData\\Roaming\\NuGet\\NuGet.Config"

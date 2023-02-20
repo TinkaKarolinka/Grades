@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "s0W4zqX1O33zxUjCa8kgjFTkjtCTccII3bUHo6KHautnAdOVfDRuxDqyudHX6EWMJt0xnmFm+Kobrp7YIgwOfg==",
+  "dgSpecHash": "UbaP9IGX+zyPEZSH7MuInhNUB/5tF7jDSTCzvNRQasFpMAD395DZqOEbSxuiJI0zHx/XMbQmvtLFvsitVoh9xQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mciep\\Desktop\\Karolci Mega\\Nowy folder (4)\\CAŁKIEM NOWE\\test\\Challenge.Tests\\Challenge.Tests.csproj",
+  "projectFilePath": "C:\\Users\\mciep\\Desktop\\Karolci Mega\\Nowy folder (4)\\Grades\\test\\Challenge.Tests\\Challenge.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mciep\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\mciep\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

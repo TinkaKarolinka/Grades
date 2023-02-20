@@ -26,6 +26,7 @@ namespace ChallengeApp
                     }
             }
         }
+
         public override string LastName
         {
             get
@@ -41,6 +42,7 @@ namespace ChallengeApp
                     }
             }
         }
+
         public InMemoryEmployee(string lastName, string firstName) : base(lastName, firstName)
         {
             grades = new List<double>();
@@ -64,57 +66,7 @@ namespace ChallengeApp
                 throw new ArgumentException($"Nieprawidłowy argument: {nameof(grade)}. Ocena musi zawierać się w przedziale 0,5-100!");
             }
         }
-        public override void AddGrade(string grade)
-        {
-            if ((grade[^1] == '+' || grade[^1] == '-'))
-            {
-                var modifier = grade[^1];
-                var gradeSing = double.Parse(grade[..^1]) + modifier
-                switch
-                {
-                    '+' => .5,
-                    '-' => -.25,
-                    _ => 0
-                };
-                if (gradeSing > 0 && gradeSing <= 100)
-                {
-                    grades.Add(gradeSing);
-                    if (GradeAdded != null)
-                    {
-                        GradeAdded(this, new EventArgs());
-                    }
-                    if (GradeAddedUnder30 != null && gradeSing < 30)
-                    {
-                        GradeAddedUnder30(this, new EventArgs());
-                    }
-                }
-                else
-                {
-                    throw new ArgumentException($"Nieprawidłowy argument: {nameof(grade)}. Ocena musi zawierać się w przedziale 0,5-100!");
-                }
-            }
-            else
-            {
-                double gradeDouble = 0;
-                var isParsed = double.TryParse(grade, out gradeDouble);
-                if (isParsed && gradeDouble > 0 && gradeDouble <= 100)
-                {
-                    grades.Add(gradeDouble);
-                    if (GradeAdded != null)
-                    {
-                        GradeAdded(this, new EventArgs());
-                    }
-                    if (GradeAddedUnder30 != null && gradeDouble < 30)
-                    {
-                        GradeAddedUnder30(this, new EventArgs());
-                    }
-                }
-                else
-                {
-                    throw new ArgumentException($"Nieprawidłowy argument: {nameof(grade)}. Ocena musi zawierać się w przedziale 0,5-100!");
-                }
-            }
-        }
+
         public override Statistics GetStatistics()
         {
             var result = new Statistics();
