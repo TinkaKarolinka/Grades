@@ -47,6 +47,7 @@ namespace ChallengeApp
         {
             grades = new List<double>();
         }
+        
         public override void AddGrade(double grade)
         {
             if (grade > 0 && grade <= 100)
