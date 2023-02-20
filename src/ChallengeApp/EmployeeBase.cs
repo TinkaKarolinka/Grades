@@ -11,11 +11,11 @@ namespace ChallengeApp
         public override string LastName { get; set; }
         public EmployeeBase(string lastName, string firstName) : base(lastName, firstName)
         {
-
         }
         public abstract event IEmployee.GradeAddedDelegate GradeAdded;
         public abstract event IEmployee.GradeAddedDelegate GradeAddedUnder30;
         public abstract void AddGrade(double grade);
+        
         public void AddGrade(string grade)
         {
             if ((grade[^1] == '+' || grade[^1] == '-'))
